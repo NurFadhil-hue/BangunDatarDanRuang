@@ -1,0 +1,467 @@
+<!DOCTYPE HTML>
+<!--
+	Aesthetic by gettemplates.co
+	Twitter: http://twitter.com/gettemplateco
+	URL: http://gettemplates.co
+-->
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kelompok 4 &mdash; Bangun Datar dan Bangun Ruang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Bangun Datar dan Bangun Ruang" />
+	<meta name="keywords" content="bangun, bangun ruang, bangun datar, kalkulator, pythagoras, kuis, latihan soal"/>
+	<meta name="author" content="kelompok 4" />
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+
+		<nav class="gtco-nav" role="navigation">
+			<div class="gtco-container">
+				
+				<div class="row">
+					<div class="col-sm-2 col-xs-12">
+						<div id="gtco-logo"><a href="index.html"><img src="images/logo.png" alt="Free HTML5 Website Template by GetTemplates.co"></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li class="has-dropdown">
+								<a href="materi.html">Materi</a>
+								<ul class="dropdown">
+									<li><a href="pengertianbangundatar.html">Pengertian Bangun Datar</a></li>
+									<li class="active"><a href="jenis bangun datar.html">Jenis-Jenis Bangun Datar dan Kalkulator</a></li>
+									<li><a href="pengertianbangunruang.html">Pengertian Bangun Ruang</a></li>
+									<li><a href="macamruang.html">Jenis-Jenis Bangun Ruang dan Kalkulator</a></li>
+									<li><a href="contohsoal.html">Contoh Soal</a></li>
+								</ul>
+							</li>
+							<li><a href="latihansoal.html">Latihan</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</nav>
+
+		<header id="gtco-header" class="gtco-cover gtco-cover-xs gtco-inner" role="banner">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-left">
+						<div class="display-t">
+							<div class="display-tc">
+								<div class="row">
+									<div class="col-md-8">
+										<h1 class="no-margin">Jenis - Jenis Bangun Datar</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- END #gtco-header -->
+
+		<div class="gtco-section">
+			<div class="gtco-container">
+				<div class="row">
+					<h2><a class="btn btn-green">PERSEGI</a></h2>
+					<div><img src="images/persegi.png"/></div>
+					<p1>Persegi adalah bangun datar yang memiliki 4 sisi sama panjang dan memiliki empat sudut siku-siku.</P1>
+					<div><p2><a Class="green bold">Ciri-ciri Persegi</a></p2></div>
+					<div><P3>1. Memiliki sisi-sisi yang sama panjang.</P3></div>
+					<div><P3>2. Memiliki dua diagonal yang sama panjang (keduanya saling berpotongan dan membentuk tegak lurus serta membaginya menjadi dua bagian sama panjang).</P3></div>
+					<div><P3>3. Memiliki empat sudut siku-siku yang sama besar, yakni 90 derajat.</P3></div>
+					<div><P3>4. Memiliki empat sumbu simetri lipat.</P3></div>
+					<div><P3>5. Memiliki empat titik sudut.</P3></div>
+					<div><P3>6. Memiliki empat sumbu simetri putar.</P3></div>
+					<div><p2><a Class="green bold">Rumus Luas dan Keliling Persegi Panjang</a></p2></div>
+                	<p>Luas Persegi = sisi × sisi atau s²</p>
+                	<p>Keliling Persegi = 4s</p>
+                	<p><a class="btn btn-white">Kalkulator Luas dan Keliling Persegi</a></p>
+                	<label for="sisiPersegi">Panjang Sisi:</label>
+                	<input type="number" id="sisiPersegi">
+                	<button onclick="hitungPersegi()">Hitung</button>
+                	<p>Luas Persegi: <span id="luasPersegi"></span></p>
+                	<p>Keliling Persegi: <span id="kelilingPersegi"></span></p>
+                	<script>
+                    	function hitungPersegi() {
+                        	const sisiPersegi = parseFloat(document.getElementById("sisiPersegi").value);
+                        	const luas = sisiPersegi * sisiPersegi;
+                        	const keliling = 4 * sisiPersegi;
+                        	document.getElementById("luasPersegi").textContent = luas;
+                        	document.getElementById("kelilingPersegi").textContent = keliling;
+                    	}
+                	</script> 
+				</div>
+				<div class="row">
+					<h2><a class="btn btn-green">PERSEGI PANJANG</a></h2>
+					<div><img src="images/persegipanjang.png"/></div>
+					<p1>Persegi panjang adalah bangun datar yang memiliki dua sisi panjang dan dua sisi pendek. Selain itu persegi panjang memiliki empat sudut siku-siku.</P1>
+					<div><p2><a Class="green bold">Ciri-Ciri Persegi Panjang</a></p2></div>
+					<div><P3>1. Memiliki empat sisi (dimana kedua sisi tersebut saling berhadapan sama panjang dan sejajar).</P3></div>
+					<div><P3>2. Memiliki empat sudut siku-siku yang sama besar, yaitu 90 derajat.</P3></div>
+					<div><P3>3. Memiliki dua diagonal (garis melintang) yang berpotongan menjadi dua bagian yang sama panjang.</P3></div>
+					<div><P3>4. Memiliki dua sumbu simetri lipat.</P3></div>
+					<div><P3>5. Memiliki dua sumbu simetri putar.</P3></div>
+					<div><P3>6. Memiliki sisi-sisi persegi panjang yang saling tegak lurus.</P3></div>
+					<div><p2><a Class="green bold">Rumus Luas dan Keliling Persegi Panjang</a></p2></div>
+                	<p>Luas Persegi Panjang = panjang × lebar atau p × l</p>
+                	<p>Keliling Persegi Panjang = 2(p+l)</p>
+                	<p><a class="btn btn-white">Kalkulator Luas dan Keliling Persegi Panjang</a></p>
+                	<label for="panjangPersegipanjang">Panjang:</label>
+                	<input type="number" id="panjangPersegipanjang">
+                	<label for="lebarPersegipanjang">Lebar:</label>
+                	<input type="number" id="lebarPersegipanjang">
+                	<button onclick="hitungPersegipanjang()">Hitung</button>
+                	<p>Luas Persegi Panjang: <span id="luasPersegipanjang"></span></p>
+                	<p>Keliling Persegi Panjang: <span id="kelilingPersegipanjang"></span></p>
+                	<script>
+                   		function hitungPersegipanjang() {
+                        	const panjangPersegipanjang = parseFloat(document.getElementById("panjangPersegipanjang").value);
+                        	const lebarPersegipanjang = parseFloat(document.getElementById("lebarPersegipanjang").value);
+                        	const luas = panjangPersegipanjang * lebarPersegipanjang;
+                        	const keliling = 2 * (panjangPersegipanjang + lebarPersegipanjang);
+                        	document.getElementById("luasPersegipanjang").textContent = luas;
+                        	document.getElementById("kelilingPersegipanjang").textContent = keliling;
+                    	}
+                	</script>
+            		</p1>
+        		</div>
+				<div class="row">
+					<h2><a class="btn btn-green">SEGITIGA</a></h2>
+					<div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Rtriangle.svg/220px-Rtriangle.svg.png"/></div>
+					<p1>Segitiga adalah bangun ruang yang memiliki 3 sisi. Segitiga yang ketiga sisinya sama panjang disebut segitiga sama sisi. Segitiga yang memiliki dua sisi yang sama panjang disebut segitiga sama kaki. Segitiga yang membentuk sudut siku-siku disebut segitiga siku-siku. Segitiga yang ketiga sisinya tidak sama panjang disebut segitiga sembarang.</P1>
+					<div><p2><a Class="green bold">Ciri-Ciri Segitiga</a></p2></div>
+					<div><h4>1. Segitiga Sama Sisi</h4></div>
+					<div><P3>a.Memiliki tiga sudut yang sama besarnya, yakni 60 derajat</P3></div>
+					<div><P3>b. Memiliki tiga sisi yang sama panjang.</P3></div>
+					<div><P3>c. Memiliki tiga sumbu simetri lipat.</P3></div>
+					<div><P3>d. Memiliki tiga sumbu simetri putar.</P3></div>
+					<div><h4>2. Segitiga Sama Kaki.</h4></div>
+					<div><P3>a. Memiliki satu sumbu simetri lipat.</P3></div>
+					<div><P3>b. Memiliki dua sisi yang berhadapan sama panjang.</P3></div>
+					<div><P3>c. Memiliki satu sumbu simetri putar.</P3></div>
+					<div><h4>3. Segitiga Siku-Siku</h4></div>
+					<div><P3>a. Memiliki satu sisi miring.</P3></div>
+					<div><P3>b. Tidak memiliki sumbu simetri lipat.</P3></div>
+					<div><P3>c. Memiliki dua sisi yang saling tegak lurus.</P3></div>
+					<div><P3>d. Tidak memiliki sumbu simetri putar.</P3></div>
+					<div><p3>e. Salah satu sudutnya, yaitu sudut siku-siku sebesar 90 derajat.</p3></div>
+					<div><p3>f. Menggunakan rumus phytagoras dalam mencari panjang sisi miringnya</p3></div>
+					<div><h4>4.Segitiga Sembarang</h4></div>
+					<div><P3>a. Memiliki tiga sisi tidak sama panjang.</P3></div>
+					<div><P3>b. Memiliki tiga sudut yang besarannya berbeda.</P3></div>
+					<div><P3>c. Tidak memiliki sumbu simetri lipat.</P3></div>
+					<div><P3>d. Memiliki satu sumbu simetri putar.</P3></div>
+					<div><p2><a Class="green bold">Teorema Pythagoras</a></p2></div>
+					<div><P3>Teorema pythagoras menjelaskan hubungan panjang sisi pada segitiga siku-siku. Oleh karena itu, teorema ini hanya berlaku pada segitiga siku-siku. Teorema phytagoras berbunyi "Di dalam sebuah segitiga siku-siku diberlakukan kuadrat dari sisi miring (sisi c) sama dengan jumlah kuadrat dari sisi-sisi lainnya (sisi a dan sisi b)".</P3></div>
+					<p>Rumus dari teorema pythagoras yaitu c² = a² + b².</p>
+					<p><a class="btn btn-white">Kalkulator Pythagoras</a></p>
+					<label for="sisia">Panjang Sisi a:</label>
+					<input type="number" id="sisia">
+					<label for="sisib">Panjang Sisi b:</label>
+					<input type="number" id="sisib">
+					<button onclick="hitungPythagoras()">Hitung</button>
+					<p>Panjang Sisi Miring c: <span id="sisiMiring"></span></p>
+					<script>
+						function hitungPythagoras() {
+							const sisia = parseFloat(document.getElementById("sisia").value);
+							const sisib = parseFloat(document.getElementById("sisib").value);
+							if (isNaN(sisia) || isNaN(sisib)) {
+								document.getElementById("sisiMiring").innerHTML = "masukkan panjang sisi a dan b yang valid.";
+							} else {
+								const sisiMiring = Math.sqrt(Math.pow(sisia, 2) + Math.pow(sisib, 2));
+								document.getElementById("sisiMiring").innerHTML =sisiMiring.toFixed(2);
+							}
+						}
+					</script>
+					<div><p2><a Class="green bold">Rumus Luas dan Keliling Segitiga</a></p2></div>
+					<p>Luas Segitiga = ½ × alas × tinggi</p>
+					<p>Keliling Segitiga = jumlah ketiga sisinya atau a + b + c</p>
+                	<p><a class="btn btn-white">Kalkulator Luas dan Keliling Segitiga</a></p>
+                	<label for="alasSegitiga">Alas:</label>
+                	<input type="number" id="alasSegitiga">
+                	<label for="tinggiSegitiga">Tinggi:</label>
+                	<input type="number" id="tinggiSegitiga">
+                	<label for="aSegitiga">a:</label>
+                	<input type="number" id="aSegitiga">
+                	<label for="bSegitiga">b:</label>
+                	<input type="number" id="bSegitiga">
+                	<label for="cSegitiga">c:</label>
+                	<input type="number" id="cSegitiga">
+                	<button onclick="hitungSegitiga()">Hitung</button>
+                	<p>Luas Segitiga: <span id="luasSegitiga"></span></p>
+                	<p>Keliling Segitiga: <span id="kelilingSegitiga"></span></p>
+                	<script>
+                    	function hitungSegitiga() {
+                        	const alasSegitiga = parseFloat(document.getElementById("alasSegitiga").value);
+                        	const tinggiSegitiga = parseFloat(document.getElementById("tinggiSegitiga").value);
+                        	const aSegitiga = parseFloat(document.getElementById("aSegitiga").value);
+                        	const bSegitiga = parseFloat(document.getElementById("bSegitiga").value);
+                        	const cSegitiga = parseFloat(document.getElementById("cSegitiga").value);
+                        	const luas = alasSegitiga * tinggiSegitiga / 2;
+                        	const keliling = aSegitiga + bSegitiga + cSegitiga;
+                        	document.getElementById("luasSegitiga").textContent = luas;
+                        	document.getElementById("kelilingSegitiga").textContent = keliling;
+                    	}
+                	</script>
+            		</p1>
+            	</div>
+				<div class="row">
+						<h2><a class="btn btn-green">JAJAR GENJANG</a></h2>
+						<div><img src="https://matematikaitumudahloh.files.wordpress.com/2017/01/jajargenjang.png?w=656"/></div>
+						<p1>Jajar genjang adalah bangun datar yang memiliki sepasang sisi yang sejajar.</P1>
+						<div><p2><a Class="green bold">Ciri-Ciri jajar Genjang</a></p2></div>
+						<div><P3>1. Memiliki dua diagonal yang tidak sama panjang.</P3></div>
+						<div><P3>2. Tidak memiliki sumbu simetri lipat dan sumbu simetri putar.</P3></div>
+						<div><P3>3. Memiliki dua pasang sisi yang saling berhadapan sama panjang dan saling sejajar.</P3></div>
+						<div><P3>4. Memiliki empat titik sudut saling berhadapan sama besar dan berpasangan (dua sudut tumpul dan dua sudut lancip).</P3></div>
+						<div><P3>5. Memiliki sudut yang saling berdekatan sebesar 180 derajat.</P3></div>
+						<div><p2><a Class="green bold">Rumus Luas dan Keliling Jajar Ganjang</a></p2></div>
+						<p>Luas Jajar Genjang = alas × tinggi atau a × t</p>
+                		<p>Keliling Jajar Genjang = 2 × (sisi sejajar 1 + sisi sejajar 2) atau 2(a+b)</p>
+                <p><a class="btn btn-white">Kalkulator Luas dan Keliling Jajar Genjang</a></p>
+                <label for="alasJajargenjang">Alas:</label>
+                <input type="number" id="alasJajargenjang">
+                <label for="tinggiJajargenjang">Tinggi:</label>
+                <input type="number" id="tinggiJajargenjang">
+                <label for="aJajargenjang">a:</label>
+                <input type="number" id="aJajargenjang">
+                <label for="bJajargenjang">b:</label>
+                <input type="number" id="bJajargenjang">
+                <button onclick="hitungJajargenjang()">Hitung</button>
+                <p>Luas Jajar Genjang: <span id="luasJajargenjang"></span></p>
+                <p>Keliling Jajar Genjang: <span id="kelilingJajargenjang"></span></p>
+                <script>
+                    function hitungJajargenjang() {
+                        const alasJajargenjang = parseFloat(document.getElementById("alasJajargenjang").value);
+                        const tinggiJajargenjang = parseFloat(document.getElementById("tinggiJajargenjang").value);
+                        const aJajargenjang = parseFloat(document.getElementById("aJajargenjang").value);
+                        const bJajargenjang = parseFloat(document.getElementById("bJajargenjang").value);
+
+                        const luas = alasJajargenjang * tinggiJajargenjang;
+                        const keliling = 2 * (aJajargenjang + bJajargenjang);
+                        document.getElementById("luasJajargenjang").textContent = luas;
+                        document.getElementById("kelilingJajargenjang").textContent = keliling;
+                    }
+                </script>
+            	</p1>
+        		</div>
+				<div class="row">
+						<h2><a class="btn btn-green">TRAPESIUM</a></h2>
+						<div><img src="images/trapesium.PNG"/></div>
+						<p1>Trapesium adalah bangun datar yang memiliki bentuk berupa segiempat dengan sepasang sisinya saling berhadapan sejajar.</P1>
+						<div><p2><a Class="green bold">Ciri-Ciri Trapesium</a></p2></div>
+						<div><P3>1. Trapesium memiliki berbagai macam bentuk, yaitu trapesium sembarang, siku-siku, dan sama kaki.</P3></div>
+						<div><P3>2. Memiliki empat sisi (dua sisi yang saling sejajar).</P3></div>
+						<div><P3>3. Memiliki empat sudut (dua jumlah sudut saling berdekatan dengan besar 180 derajat).</P3></div>
+						<div><p2><a Class="green bold">Rumus Luas dan Keliling Trapesium</a></p2></div>
+                <p>Luas Trapesium = ((a + b) × t) / 2</p>
+                <p>Keliling Trapesium = a + b + c + d</p>
+                <p><a class="btn btn-white">Kalkulator Luas dan keliling Trapesium</a></p>
+
+                <label for="aTrapesium">a:</label>
+                <input type="number" id="aTrapesium">
+                <label for="bTrapesium">b:</label>
+                <input type="number" id="bTrapesium">
+                <label for="cTrapesium">c:</label>
+                <input type="number" id="cTrapesium">
+                <label for="dTrapesium">d:</label>
+                <input type="number" id="dTrapesium">
+                <label for="tinggiTrapesium">tinggi:</label>
+                <input type="number" id="tinggiTrapesium">
+                <button onclick="hitungTrapesium()">Hitung</button>
+                <p>Luas Trapesium: <span id="luasTrapesium"></span></p>
+                <p>Keliling Trapesium: <span id="kelilingTrapesium"></span></p>
+                <script>
+                    function hitungTrapesium() {
+                        const aTrapesium = parseFloat(document.getElementById("aTrapesium").value);
+                        const bTrapesium = parseFloat(document.getElementById("bTrapesium").value);
+                        const cTrapesium = parseFloat(document.getElementById("cTrapesium").value);
+                        const dTrapesium = parseFloat(document.getElementById("dTrapesium").value);
+                        const tinggiTrapesium = parseFloat(document.getElementById("tinggiTrapesium").value);
+
+                        const luas = (1/2) * (aTrapesium + bTrapesium) * tinggiTrapesium;
+                        const keliling = aTrapesium + bTrapesium + cTrapesium + dTrapesium;
+                        document.getElementById("luasTrapesium").textContent = luas;
+                        document.getElementById("kelilingTrapesium").textContent = keliling;
+                    }
+                </script>
+                <p></p>
+                <p></p>
+			</div>
+			<div class="row">
+						<h2><a class="btn btn-green">BELAH KETUPAT</a></h2>
+						<div><img src="images/belahketupat.jpg"/></div>
+						<p1>Belah ketupat adalah jenis bangun datar dua dimensi yang memiliki bentuk sama panjang pada empat rusuk dan sisinya serta memiliki dua pasang sudut yang bukan sudut siku-siku sama besar dengan sudut di hadapannya.</P1>
+						<div><p2><a Class="green bold">Ciri-Ciri Belah Ketupat</a></p2></div>
+						<div><P3>1. Memiliki empat titik sudut yang saling berhadapan dan sama besarnya.</P3></div>
+						<div><P3>2. Memiliki dua diagonal yang panjangnya berbeda.</P3></div>
+						<div><P3>3. Memiliki dua sumbu simetri lipat.</P3></div>
+						<div><P3>4. Memiliki dua sumbu simetri putar.</P3></div>
+						<div><P3>5. Memiliki sisi yang tidak tegak lurus.</P3></div>
+						<div><p3>6. Memiliki dua jumlah sudut yang berdekatan sebesar 180 derajat</p3></div>
+						<div><p2><a Class="green bold">Rumus Luas dan Keliling Belah Ketupat</a></p2></div>
+						<p>Luas Belah Ketupat = (d₁ + d₂) / 2</p>
+                		<p>Keliling Belah Ketupat = 4s </p>
+                <p><a class="btn btn-white">Kalkulator Luas dan Keliling Belah Ketupat</a></p>
+                		<label for="d1BelahKetupat">d₁:</label>
+                <input type="number" id="d1BelahKetupat">
+                <label for="d2BelahKetupat">d₂:</label>
+                <input type="number" id="d2BelahKetupat">
+                <label for="sisiBelahKetupat">sisi:</label>
+                <input type="number" id="sisiBelahKetupat">
+                <button onclick="hitungBelahKetupat()">Hitung</button>
+                <p>Luas Belah Ketupat: <span id="luasBelahKetupat"></span></p>
+                <p>Keliling Belah Ketupat: <span id="kelilingBelahKetupat"></span></p>
+                <script>
+                    function hitungBelahKetupat() {
+                        const d1BelahKetupat = parseFloat(document.getElementById("d1BelahKetupat").value);
+                        const d2BelahKetupat = parseFloat(document.getElementById("d2BelahKetupat").value);
+                        const sisiBelahKetupat = parseFloat(document.getElementById("sisiBelahKetupat").value);
+
+                        const luas = (d1BelahKetupat + d2BelahKetupat) / 2;
+                        const keliling = 4 * sisiBelahKetupat;
+                        document.getElementById("luasBelahKetupat").textContent = luas;
+                        document.getElementById("kelilingBelahKetupat").textContent = keliling;
+                    }
+                </script>
+                <p></p>
+                <p></p>
+                </p1>
+            	</div>
+            <div class="row">
+            		<h2><a class="btn btn-green">LAYANG - LAYANG</a></h2>
+            		<div><img src="images/layanglayang.jpg"/></div>
+					<p1>Layang-layang adalah bangun geometri yang memiliki bentuk segiempat dari dua segitiga sama kaki yang alasnya saling berhimpitan serta memiliki diagonal yang saling tegak lurus.</P1>
+					<div><p2><a Class="green bold">Ciri-Ciri Layang-Layang</a></p2></div>
+					<div><P3>1. Memiliki satu sumbu simetri lipat.</P3></div>
+					<div><P3>2. Tidak memiliki sumbu simetri putar.</P3></div>						
+					<div><P3>3. Memiliki empat sisi berpasangan yang sama panjang.</P3></div>
+					<div><P3>4. Memiliki empat titik sudut (sepasang sudutnya saling berhadapan sama besar)</P3></div>
+					<div><P3>5. Memiliki dua diagonal yang berbeda dan saling tegak lurus.</P3></div>
+					<div><p2><a Class="green bold">Rumus Luas dan Keliling Layang-Layang</a></p2></div>
+					<p>Luas Layang-Layang = (d₁ + d₂) / 2</p>
+                	<p>Keliling Layang-Layang = 2(s₁ + s₂)</p>
+                	<p><a class="btn btn-white">Kalkulator Luas dan Keliling Layang-Layang</a></p>
+                <label for="d1LayangLayang">d₁:</label>
+                <input type="number" id="d1LayangLayang">
+                <label for="d2LayangLayang">d₂:</label>
+                <input type="number" id="d2LayangLayang">
+                <label for="s1LayangLayang">s₁:</label>
+                <input type="number" id="s1LayangLayang">
+                <label for="s2LayangLayang">s₂:</label>
+                <input type="number" id="s2LayangLayang">
+                <button onclick="hitungLayangLayang()">Hitung</button>
+                <p>Luas Layang-Layang: <span id="luasLayangLayang"></span></p>
+                <p>Keliling Layang-Layang: <span id="kelilingLayangLayang"></span></p>
+                <script>
+                    function hitungLayangLayang() {
+                        const d1LayangLayang = parseFloat(document.getElementById("d1LayangLayang").value);
+                        const d2LayangLayang = parseFloat(document.getElementById("d2LayangLayang").value);
+                        const s1LayangLayang = parseFloat(document.getElementById("s1LayangLayang").value);
+                        const s2LayangLayang = parseFloat(document.getElementById("s2LayangLayang").value);
+
+                        const luas = (d1LayangLayang + d2LayangLayang) / 2;
+                        const keliling = 2 * (s1LayangLayang + s2LayangLayang);
+                        document.getElementById("luasLayangLayang").textContent = luas;
+                        document.getElementById("kelilingLayangLayang").textContent = keliling;
+                    }
+                </script>
+                <p></p>
+                <p></p>
+				</div>
+				<div class="row">
+            		<h2><a class="btn btn-green">LINGKARAN</a></h2>
+            		<div><img src="images/lingkaran2.jpg"/></div>
+					<p1>Lingkaran adalah bangun datar yang sisinya melengkung. Lingkaran memiliki sudut 360 derajat. Selain itu, jarak dari titik pusat ke titikk ujung lingkaran disebut dengan jari-jari.</P1>
+					<div><p2><a Class="green bold">Ciri-Ciri Lingkaran</a></p2></div>
+					<div><P3>1. Memiliki jarak pada tepi garis ke titik pusat yang biasa disebut dengan jari-jari atau dilambangkan r.</P3></div>
+					<div><P3>2. Memiliki simetri lipat dan putar yang jumlahnya tidak terhingga.</P3></div>						
+					<div><P3>3. Memiliki jumlah derajat lingkaran sebesar 360 derajat.</P3></div>
+					<div><P3>4. Memiliki satu titik pusat</P3></div>
+					<div><P3>5. Memiliki diameter yang membagi lingkaran menjadi dua sisi yang seimbang.</P3></div>
+					<div><p3>6. Memiliki jari-jari yang menghubungkan ke titik pusat dengan titik busur lingkaran.</p3></div>
+					<div><p3>7. Memiliki diameter yang konstan.</p3></div>
+					<div><p2><a Class="green bold">Rumus Luas dan Keliling Lingkaran</a></p2></div>
+					<p>Luas Lingkaran = phi × jari-jari × jari-jari atau πr²</p>
+                	<p>Keliling Lingkaran = 2πr</p>
+                	<p><a class="btn btn-white">Kalkulator Luas dan Keliling Lingkaran</a></p>
+                	<label for="jarijariLingkaran">Jari-Jari:</label>
+                <input type="number" id="jarijariLingkaran">
+                <button onclick="hitungLingkaran()">Hitung</button>
+                <p>Luas Lingkaran: <span id="luasLingkaran"></span></p>
+                <p>Keliling Lingkaran: <span id="kelilingLingkaran"></span></p>
+                <script>
+                    function hitungLingkaran() {
+                        const jarijariLingkaran = parseFloat(document.getElementById("jarijariLingkaran").value);
+                        const luas = Math.PI  * jarijariLingkaran * jarijariLingkaran;
+                        const keliling = 2 * Math.PI  * jarijariLingkaran;
+                        document.getElementById("luasLingkaran").textContent = luas;
+                        document.getElementById("kelilingLingkaran").textContent = keliling;
+                    }
+                </script>
+            </div>
+		</div>
+	</div>
+</div>
+</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

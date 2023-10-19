@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<!--
+	Aesthetic by gettemplates.co
+	Twitter: http://twitter.com/gettemplateco
+	URL: http://gettemplates.co
+-->
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kelompok 4 &mdash; Bangun Datar dan Bangun Ruang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Bangun Datar dan Bangun Ruang" />
+	<meta name="keywords" content="bangun, bangun ruang, bangun datar, kalkulator, pythagoras, kuis, latihan soal"/>
+	<meta name="author" content="kelompok 4" />
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+
+		<nav class="gtco-nav" role="navigation">
+			<div class="gtco-container">
+				
+				<div class="row">
+					<div class="col-sm-2 col-xs-12">
+						<div id="gtco-logo"><a href="index.html"><img src="images/logo.png" alt="Free HTML5 Website Template by GetTemplates.co"></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li class="has-dropdown">
+								<a href="materi.html">Materi</a>
+								<ul class="dropdown">
+									<li><a href="pengertianbangundatar.html">Pengertian Bangun Datar</a></li>
+									<li><a href="jenis bangun datar.html">Jenis-Jenis Bangun Datar dan Kalkulator</a></li>
+									<li><a href="pengertianbangunruang.html">Pengertian Bangun Ruang</a></li>
+									<li class="active"><a href="macamruang.html">Jenis-Jenis Bangun Ruang dan Kalkulator</a></li>
+									<li><a href="contohsoal.html">Contoh Soal</a></li>
+								</ul>
+							</li>
+							<li><a href="latihansoal.html">Latihan</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</nav>
+
+		<header id="gtco-header" class="gtco-cover gtco-cover-xs gtco-inner" role="banner">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-left">
+						<div class="display-t">
+							<div class="display-tc">
+								<div class="row">
+									<div class="col-md-8">
+										<h1 class="no-margin">Jenis - Jenis Bangun Ruang</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- END #gtco-header -->
+
+		<div class="gtco-section">
+			<div class="gtco-container">
+				<div class="row">
+					<h2>Bangun Ruang Sisi Lengkung</h2>
+					<h2><a class="btn btn-green">Kerucut (cone)</a></h2>
+					<p1>Kerucut merupakan sebuah bangun ruang tiga dimensi yang memiliki alas berbentuk lingkaran dan sisi melengkung sebagai selimut yang memiliki irisan dari lingkaran. Kerucut dengan tabung memiliki kesamaan, yakni sama-sama memiliki alas yang berbentuk lingkaran. Namun memiliki perbedaan dari sisi selimut.Selimut kerucut berbentuk sisi tegak kerucut.</P1>
+					<div><p2><a Class="green bold">Ciri-ciri Bangun Ruang Kerucut</a></p2></div>
+					<div><P3>1. Memiliki 2 (dua) bidang sisi.</P3></div>
+					<div><P3>2. Memiliki satu buah rusuk yang berbentuk melengkung.</P3></div>
+					<div><P3>3. Kerucut memiliki satu buah titik sudut sebagai titik puncak.</P3></div>
+					<div><P3>4. Kerucut tidak memiliki bidang diagonal.</P3></div>
+					<div><p2><a Class="green bold">Rumus Menghitung Bangun Ruang Kerucut</a></p2></div>
+                	<p>Volume Kerucut (V): 1/3 x π × r² × t</p>
+                	<p>Luas Permukaan Kerucut (L) = (π × r²) + (π × r × s)</p>
+                	<p><a class="btn btn-white">Kalkulator Volume dan Luas Permukaan Kerucut</a></p>
+                	<label for="jari-jari-kerucut">Jari-Jari Kerucut:</label>
+   					<input type="number" id="jari-jari-kerucut">
+    				<label for="tinggi-kerucut">Tinggi Kerucut:</label>
+    				<input type="number" id="tinggi-kerucut">
+    				<button onclick="hitungKerucut()">Hitung</button>
+    				<p>Volume Kerucut: <span id="volumeKerucut"></span></p>
+                	<p>Luas Permukaan Kerucut: <span id="luasPermukaanKerucut"></span></p>
+    				<script>
+    					function hitungKerucut() {
+    						var jariJariKerucut = parseFloat(document.getElementById("jari-jari-kerucut").value);
+    						var tinggiKerucut = parseFloat(document.getElementById("tinggi-kerucut").value);
+
+    						var volumeKerucut = (1 / 3) * Math.PI * Math.pow(jariJariKerucut, 2) * tinggiKerucut;
+    						var luasPermukaanKerucut = Math.PI * jariJariKerucut * (jariJariKerucut + Math.sqrt(Math.pow(tinggiKerucut, 2) + Math.pow(jariJariKerucut, 2)));
+
+                        	document.getElementById("volumeKerucut").textContent = volumeKerucut;
+                        	document.getElementById("luasPermukaanKerucut").textContent = luasPermukaanKerucut;
+						}
+    				</script>
+
+    				<h2><a class="btn btn-green">Bola</a></h2>
+    				<p1>Bangun ruang berbentuk bola adalah sebuah bangun ruang tiga dimensi yang memiliki batasan sisi berbentuk lengkungan. Bola tidak memiliki rusuk dan titik sudut karena bentuknya bundar. Tetapi bola memiliki bidang sisi lengkung sebagai pembatas volume atau ruang. Contoh benda yang biasa kita temui adalah bola yang kita gunakan untuk olahraga sepakbola.</p1>
+    				<div><p2><a Class="green bold">Ciri-ciri Bangun Ruang Bola:</a></p2></div>
+					<div><P3>1. Hanya memiliki satu buah bidang sisi yang membentuk lengkungan.</P3></div>
+					<div><P3>2. Bola memiliki satu titik inti atau pusat.</P3></div>
+					<div><P3>3. Bola tidak memiliki rusuk, titik sudut dan bidang diagonal.</P3></div>
+					<div><P3>4. Jarak antara dinding ke titik inti atau pusat bola disebut jari-jari.</P3></div>
+					<div><p2><a Class="green bold">Rumus Menghitung Bangun Ruang Bola</a></p2></div>
+                	<p>Volume Bola (V): 4/3 × π × r³</p>
+                	<p>Luas Permukaan Bola (L) = 2 × 4 × π × r²</p>
+                	<p><a class="btn btn-white">Kalkulator Volume dan Luas Permukaan Bola</a></p>
+                	<label for="jari-jari-bola">Jari-Jari Bola:</label>
+    				<input type="number" id="jari-jari-bola">
+    				<button onclick="hitungBola()">Hitung</button>
+    				<p>Volume Bola: <span id="volumeBola"></span></p>
+                	<p>Luas Permukaan Bola: <span id="luasPermukaanBola"></span></p>
+    				<script>
+    					function hitungBola() {
+    						var jariJariBola = parseFloat(document.getElementById("jari-jari-bola").value);
+
+    						var volumeBola = (4 / 3) * Math.PI * Math.pow(jariJariBola, 3);
+    						var luasPermukaanBola = 4 * Math.PI * Math.pow(jariJariBola, 2);
+
+							document.getElementById("volumeBola").textContent = volumeBola;
+                        	document.getElementById("luasPermukaanBola").textContent = luasPermukaanBola;
+						}
+    				</script>
+
+    				<h2><a class="btn btn-green">Tabung</a></h2>
+    				<p1>Bangun ruang berbentuk tabung adalah sebuah bangun ruang tiga dimensi yang memiliki tutup dan alas berbentuk lingkaran dengan ukuran yang sama dan bidang sisi tegak menyelimuti “badannya” dengan persegi panjang. Contoh benda yang berbentuk tabung seperti susu kaleng, alat musik drum, dll..</p1>
+    				<div><p2><a Class="green bold">Ciri-ciri Bangun Ruang Tabung:</a></p2></div>
+					<div><P3>1. Mempunyai 3 sisi yakni alas & tutup berbentuk lingkaran dan selimut berbentuk persegi panjang</P3></div>
+					<div><P3>2. Tidak mempunyai titik sudut.</P3></div>
+					<div><p2><a Class="green bold">Rumus Menghitung Bangun Ruang Tabung</a></p2></div>
+                	<p>Volume Tabung (V): π × r² × t</p>
+                	<p>Luas Permukaan Tabung (L) = (2 × luas alas) + (keliling alas × tinggi)</p>
+                	<p><a class="btn btn-white">Kalkulator Volume dan Luas Permukaan Tabung</a></p>
+                	<label for="jari-jari-tabung">Jari-Jari Tabung:</label>
+    				<input type="number" id="jari-jari-tabung">
+    				<label for="tinggi-tabung">Tinggi Tabung:</label>
+    				<input type="number" id="tinggi-tabung">
+    				<button onclick="hitungTabung()">Hitung</button>
+        			<p>Luas Permukaan Tabung: <span id="luasPermukaanTabung"></span></p>
+        			<p>Volume Tabung: <span id="volumeTabung"></span></p>
+        			<script>
+        				function hitungTabung() {
+    						var jariJariTabung = parseFloat(document.getElementById("jari-jari-tabung").value);
+    						var tinggiTabung = parseFloat(document.getElementById("tinggi-tabung").value);
+
+    						var luasPermukaanTabung = 2 * Math.PI * jariJariTabung * (jariJariTabung + tinggiTabung);
+    						var volumeTabung = Math.PI * Math.pow(jariJariTabung, 2) * tinggiTabung;
+
+    						document.getElementById("volumeTabung").textContent = volumeTabung;
+                        	document.getElementById("luasPermukaanTabung").textContent = luasPermukaanTabung;
+							}
+        			</script>
+
+        			<h2>Bangun Ruang Sisi Datar</h2>
+        			<h2><a class="btn btn-green">Balok</a></h2>
+        			<p1>Bangun ruang balok adalah suatu bangunan ruang tiga dimensi yang dibatasi oleh 2 (dua) buah persegi dan 4 (empat) buah persegi panjang yang saling tegak lurus. Berbeda dengan kubus yang bentuk sisinya kongruen berbentuk persegi empat, balok memiliki sisi yang berhadapan sama besar ukurannya. Contoh balok di dalam kehidupan kita adalah kotak pensil, lemari pakaian, lemari pendingin, dll..</p1>
+    				<div><p2><a Class="green bold">Ciri-ciri Bangun Ruang Balok:</a></p2></div>
+					<div><P3>1. Sisi balok memiliki dua pasang berbentuk persegi panjang.</P3></div>
+					<div><P3>2. Rusuk-rusuknya sejajar mempunyai panjang yang sama seperti : AE= BF= CG = DH dan AB = CD = EF GH.</P3></div>
+					<div><P3>3. Masing-masing diagonal pada bidang sisi yang berhadapan berukuran sama panjang seperti : ABCD = EFGH, ABFE = DCGH, BCFG = ADHE yang memiliki ukuran sama panjangnya.</P3></div>
+					<div><P3>4. Masing-masing diagonal berbentuk persegi panjang</P3></div>
+					<div><p2><a Class="green bold">Rumus Menghitung Bangun Ruang Balok</a></p2></div>
+                	<p>Volume Balok (V): p × l × t</p>
+                	<p>Luas Permukaan Balok (L) = 2 × ( pl + lt + pt)</p>
+                	<p><a class="btn btn-white">Kalkulator Volume dan Luas Permukaan Balok</a></p>
+                	<label for="panjang">Panjang:</label>
+    				<input type="number" id="panjang">
+    				<label for="lebar">Lebar:</label>
+    				<input type="number" id="lebar">
+    				<label for="tinggi">Tinggi:</label>
+    				<input type="number" id="tinggi">
+    				<button onclick="hitungBalok()">Hitung</button>
+  					<p>Luas Permukaan Balok: <span id="luasPermukaan-balok"></span></p>
+        			<p>Volume Balok: <span id="volume-balok"></span></p>
+        			<script>
+        				function hitungBalok() {
+    						var panjang = parseFloat(document.getElementById("panjang").value);
+    						var lebar = parseFloat(document.getElementById("lebar").value);
+   							var tinggi = parseFloat(document.getElementById("tinggi").value);
+
+    						var volumeBalok= panjang * lebar * tinggi;
+    						var luasPermukaanBalok= 2 * (panjang * lebar + panjang * tinggi + lebar * tinggi);
+
+    						document.getElementById("volume-balok").textContent = volumeBalok;
+                        	document.getElementById("luasPermukaan-balok").textContent = luasPermukaanBalok;
+						}
+        			</script>
+        			<h2><a class="btn btn-green">Kubus</a></h2>
+        			<p1>Bangun ruang kubus merupakan bangun ruang tiga dimensi yang dibatasi oleh 6 (enam) sisi yang serupa, 12 (dua belas) rusuk sama panjang dan 8 (delapan) titik sudut. Kubus memiliki wujud bujur sangkar dan memiliki kata lain yaitu bidang enam yang beraturan. Contoh kubus seperti kotak kardus yang sama ukuran, dadu, dll.</p1>
+    				<div><p2><a Class="green bold">Ciri-ciri Bangun Ruang Kubus:</a></p2></div>
+					<div><P3>1. Mempunyai 6 (enam) buah sisi permukaan.</P3></div>
+					<div><P3>2. Mempunyai 12 (dua belas) rusuk.</P3></div>
+					<div><P3>3. Mempunyai 8 (delapan) buah titik sudut.</P3></div>
+					<div><P3>4. Rusuk kubus sama panjang</P3></div>
+					<div><p3>5. Sisi kubus berbentuk persegi.</p3></div>
+					<div><p3>6. Panjang diagonal ruang mempunyai ukuran yang sama.</p3></div>
+					<div><p3>7. Bidang diagonal masing-masing kubus berbentuk persegi panjang.</p3></div>
+					<div><p2><a Class="green bold">Rumus Menghitung Bangun Ruang Kubus</a></p2></div>
+                	<p> Volume Kubus (V): s × s × s</p>
+					<p> Luas Permukaan Kubus (L) = 2 × ( s x s)</p>
+					<p><a class="btn btn-white">Kalkulator Volume dan Luas Permukaan Kubus</a></p>
+					<label for="sisiKubus">Panjang Sisi Kubus:</label>
+    				<input type="number" id="sisiKubus"><br>
+    				<button onclick="hitungKubus()">Hitung</button>
+        			<p>Luas Permukaan Kubus: <span id="luasPermukaan-Kubus"></span></p>
+        			<p>Volume Kubus: <span id="volume-Kubus"></span></p>
+        			<script>
+        				function hitungKubus() {
+    						var sisiKubus = parseFloat(document.getElementById("sisiKubus").value);
+
+    						var luasPermukaanKubus = 6 * Math.pow(sisiKubus, 2);
+    						var volumeKubus = Math.pow(sisiKubus, 3);
+
+							document.getElementById("volume-Kubus").textContent = volumeKubus;
+                        	document.getElementById("luasPermukaan-Kubus").textContent = luasPermukaanKubus;
+                        }
+        			</script>
+
+        			<h2><a class="btn btn-green">Limas</a></h2>
+        			<p1>Bangun ruang limas adalah sebuah bangun ruang tiga dimensi yang dibatasi dengan alas berbentuk persegi banyak dan mempunyai sebuah titik puncak. Limas mempunyai banyak jenis seperti limas segi tiga, limas segi empat, limas segi lima, dan lain-lain. Limas dengan alas berbentuk persegi disebut piramida, sedangkan limas dengan alas berbentuk lingkaran disebut kerucut. Contoh benda limas adalah piramida di Mesir dengan alas persegi.</p1>
+    				<div><p2><a Class="green bold">Ciri-Ciri Bangun Ruang Limas:</a></p2></div>
+					<div><P3>1. Mempunyai 2n rusuk.</P3></div>
+					<div><P3>2. Mempunyai banyak sisi tergantung alasnya yaitu: satu sisi berbentuk persegi (bisa segi empat, segi lima, dll) berupa alas, empat sisi lainnya berbentuk segi tiga berdiri tegak dan membentuk sudut.</P3></div>
+					<div><P3>3. Mempunyai (n+1) bidang sisi.</P3></div>
+					<div><P3>4. Mempunyai (n+1) titik sudut.</P3></div>
+					<div><p2><a Class="green bold">Rumus Menghitung Bangun Ruang Limas</a></p2></div>
+                	<p> Rumus menghitung Volume Limas (V) = 1/3 × p × l × t</p>
+					<p> Rumus menghitung Luas Permukaan Limas (L) = luas alas + luas selubung limas</p>
+					<p><a class="btn btn-white">Kalkulator Volume dan Luas Permukaan Limas</a></p>
+					<label for="luas-alas">Luas Alas Limas:</label>
+    				<input type="number" id="luas-alas">
+    				<label for="tinggi-limas">Tinggi Limas:</label>
+    				<input type="number" id="tinggi-limas">
+    				<button onclick="hitungLimas()">Hitung</button>
+        			<p>Luas Permukaan Limas: <span id="luas-permukaan-limas"></span></p>
+        			<p>Volume Limas: <span id="volume-limas"></span></p>
+        			<script>
+        				function hitungLimas() {
+    						var luasAlas = parseFloat(document.getElementById("luas-alas").value);
+    						var tinggiLimas = parseFloat(document.getElementById("tinggi-limas").value);
+
+    						var luasPermukaanLimas = luasAlas + (4 * (luasAlas * tinggiLimas) / 2);
+    						var volumeLimas = (luasAlas * tinggiLimas) / 3;
+
+    						document.getElementById("volume-limas").textContent = volumeLimas;
+                        	document.getElementById("luas-permukaan-limas").textContent = luasPermukaanLimas;
+							}
+					</script>
+
+					<h2><a class="btn btn-green">Prisma Segitiga</a></h2>
+        			<p1>Bangun ruang prisma adalah sebuah bangun ruang tiga dimensi yang dibatasi oleh sisi alas dan sisi tutup berbentuk persegi (bermacam-macam) yang memiliki ukuran yang sama (kongruen). Contoh barang sehari-hari yang kita temui berbentuk prisma adalah atap rumah, tenda camping, dan lainnya.</p1>
+    				<div><p2><a Class="green bold">Ciri-Ciri Bangun Ruang Prisma Segitiga</a></p2></div>
+					<div><P3>1. Mempunyai (n+2) bidang sisi.</P3></div>
+					<div><P3>2. Mempunyai 2n titik sudut.</P3></div>
+					<div><P3>3. Mempunyai bidang alas dan atap yang bersifat kongruen (sama).</P3></div>
+					<div><p2><a Class="green bold">Rumus Menghitung Bangun Ruang Prisma Segitiga</a></p2></div>
+					<p> Volume Prisma (V) = luas alas × tinggi</p>
+					<p> Luas Permukaan Prisma (L) = (2 × Luas alas) + (Keliling alas × tinggi)</p>
+					<p><a class="btn btn-white">Kalkulator Volume dan Luas Permukaan Prisma Segitiga</a></p>
+					<label for="panjangalas">Panjang Alas:</label>
+    				<input type="number" id="panjangalas">
+    				<label for="tinggisegitiga">Tinggi Segitiga:</label>
+    				<input type="number" id="tinggisegitiga">
+    				<label for="tinggiprismasegitiga">Tinggi Prisma:</label>
+    				<input type="number" id="tinggiprismasegitiga">
+    				<button onclick="hitungPrismaSegitiga()">Hitung</button>
+        			<p>Luas Permukaan Prisma: <span id="luaspermukaanprismasegitiga"></span></p>
+        			<p>Volume Prisma: <span id="volumeprismasegitiga"></span></p>
+        			<script>
+        				function hitungPrismaSegitiga() {
+    						var panjangalas = parseFloat(document.getElementById("panjangalas").value);
+    						var tinggisegitiga = parseFloat(document.getElementById("tinggisegitiga").value);
+    						var tinggiprismasegitiga = parseFloat(document.getElementById("tinggiprismasegitiga").value);
+
+    						var luasAlas = (0.5) * panjangalas * tinggisegitiga;
+    						var luasSegitiga = 2 * ((0.5) * panjangalas * tinggiprismasegitiga) + 2 * ((0.5) * tinggisegitiga * tinggiprismasegitiga);
+    						var luasPermukaanPrismasegitiga = luasAlas + luasSegitiga;
+    						var volumePrismasegitiga = (1/2) * panjangalas * tinggisegitiga * tinggiprismasegitiga;
+
+    						document.getElementById("volumeprismasegitiga").textContent = volumePrismasegitiga;
+                        	document.getElementById("luaspermukaanprismasegitiga").textContent = luasPermukaanPrismasegitiga;
+						}
+					</script>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
